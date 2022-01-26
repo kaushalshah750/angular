@@ -8,9 +8,14 @@
     </h3>
     <h4>{{product.price}}</h4>
     <p>{{product.description}}</p>
-    <button>
+    <button (click)="share()">
         <h4>Share</h4>
     </button>
-    <button></button>
-    <br>
+    <nav>
+        <a routerLink="/info">Heroes</a>
+      </nav>
+    <app-product-alert [product]="product" (notify)="onNotify()"></app-product-alert>
+    <!-- <h2 id="hero"></h2> -->
+    <!-- <br> -->
 </div>
+    

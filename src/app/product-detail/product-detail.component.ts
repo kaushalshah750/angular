@@ -12,6 +12,15 @@ export class ProductDetailComponent implements OnInit {
 
   constructor() { }
 
+  share(){
+    window.alert('You have Clicked on share button')
+    // document.getElementById('hero')?.insertAdjacentText('afterend', 'hello')
+  }
+  
+  onNotify(){
+    window.alert('You have Clicked on notify button')
+  }
+
   ngOnInit(): void {
   }
 
